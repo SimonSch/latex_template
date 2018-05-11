@@ -1,0 +1,57 @@
+%Schriftgrößee, Layout, Papierformat, Art des Dokumentes
+\documentclass[10pt,german,a4paper]{scrartcl}
+
+%neue Rechtschreibung
+\usepackage[german]{babel}
+\usepackage{textcomp}
+
+
+% ======  Basic Settings ======
+
+% Author des Dokuments eingeben
+\newcommand{\Verfasser}{Alm Dude} 
+
+% Matrikelnummer
+\newcommand{\Matrikel}{ S17103070XX}
+
+% Semster (Damits auch im 4ten noch passt :-)
+\newcommand{\Semester}{2}
+
+% Übungsnummer
+\newcommand{\UeNummer}{1}
+
+% Zeitaufwand
+\newcommand{\Zeit}{1}
+
+% ==== End of Basic Setting ====
+
+% Template-Kopf laden
+\input{template/header}
+
+% Start Inhalt
+% --------------------------------------------------------------------------
+
+\section{Section Name}
+
+\newpage
+\subsection{Implementierung}
+\lstinputlisting[language=Pascal, caption={Hello World}]{code/HelloWorld.pas}
+
+
+\newpage
+\subsection{Test}
+..............................
+
+
+% ======= Hier Screenshots einbinden =============================
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=160mm]{pics/placeholder.png}
+	\caption{PlaceHolder Image}
+\end{figure}
+
+
+% Ende Inhalt
+% DokumentenFuss importieren
+\input{template/footer}
